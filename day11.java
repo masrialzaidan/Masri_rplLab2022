@@ -8,7 +8,8 @@ public class day11 {
         break;
       }
       System.out.println(i);
-    }  
+    }
+        System.out.println("ayam");
   }
 }
 
