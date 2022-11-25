@@ -1,8 +1,10 @@
-jumlah_barang = 60
-jumlah_barang_dalam_kodi = jumlah_barang / 20
+n = int(input('Masukkan nilai n: '))
 
-# konversi x.0 menjadi x
-if jumlah_barang_dalam_kodi % 1 == 0:
-  jumlah_barang_dalam_kodi = int(jumlah_barang_dalam_kodi)
+def hitung_faktorial (n):
+  if n > 2:
+    return n * hitung_faktorial(n - 1)
 
-print(f'{jumlah_barang} = {jumlah_barang_dalam_kodi} kodi')
+  return 2
+
+faktorial = hitung_faktorial(n)
+print(f'{n}! = {faktorial}')
